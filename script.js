@@ -264,7 +264,7 @@ function updateCountdown(){
   const target = new Date();
   target.setUTCHours(0,0,0,0);
 
-  const targetDay = 5;
+  const targetDay = 1;
   const currentDay = target.getUTCDay();
 
   let daysUntil = targetDay - currentDay;
