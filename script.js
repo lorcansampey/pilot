@@ -2,6 +2,7 @@ console.log("JS connected!");
 
 // show DATA - only append never add in middle
 const shows = [
+"placeholder",
 "The Last of Us",
 "The Office",
 "Stranger Things",
