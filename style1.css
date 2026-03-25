@@ -1,0 +1,243 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, sans-serif;
+}
+
+body {
+background: #111;
+color: white;
+text-align: center;
+line-height: 1.6;
+}
+
+header {
+padding: 40px 20px;
+background: #000;
+border-bottom: 2px solid #646464;
+}
+
+header h1 {
+font-size: 48px;
+margin-bottom: 0px;
+font-family: 'Bebas Neue', sans-serif;
+font-size: 60px;
+letter-spacing: 3px;
+text-transform: uppercase;
+}
+
+header p {
+color: #bbb;
+}
+
+.hero {
+padding: 60px 20px;
+max-width: 700px;
+margin: auto;
+}
+
+.hero h2 {
+font-size: 32px;
+margin-bottom: 15px;
+}
+
+.hero p {
+margin-bottom: 30px;
+color: #ccc;
+}
+
+.play-btn {
+display: inline-block;
+padding: 15px 30px;
+background: #0bd0f3;
+color: white;
+text-decoration: none;
+font-size: 18px;
+border-radius: 6px;
+transition: 0.3s;
+}
+
+.play-btn:hover {
+background: #007bff;
+}
+
+.how-it-works {
+padding: 60px 20px;
+background: #181818;
+}
+
+.steps {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 20px;
+max-width: 900px;
+margin: auto;
+margin-top: 30px;
+}
+
+.step {
+background: #2b415a;
+padding: 20px;
+border-radius: 10px;
+}
+
+.features {
+padding: 60px 20px;
+}
+
+.features ul {
+list-style: none;
+max-width: 400px;
+margin: auto;
+margin-top: 20px;
+}
+
+.features li {
+padding: 10px;
+border-bottom: 1px solid #333;
+}
+
+footer {
+padding: 30px;
+background: black;
+color: #777;
+font-size: 14px;
+}
+
+.game-header{
+padding:30px;
+background:#000;
+border-bottom:2px solid #222;
+}
+
+.game-container{
+max-width:800px;
+margin:auto;
+padding:40px 20px;
+}
+
+.frame-container{
+margin-bottom:30px;
+}
+
+.frame-container img{
+width:100%;
+max-height:450px;
+object-fit:cover;
+border-radius:10px;
+border:3px solid #222;
+}
+
+/* ✅ FIXED SECTION */
+.guess-section{
+display:flex;
+gap:10px;
+justify-content:center;
+align-items:center;
+max-width:500px;
+margin:0 auto 20px auto;
+}
+
+.input-wrapper{
+position: relative;
+flex: 1;
+}
+
+#guess-input{
+padding:12px;
+font-size:16px;
+width:100%;
+border-radius:5px;
+border:none;
+}
+
+#guess-btn{
+padding:12px 20px;
+background:#2263fc;
+border:none;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+
+#guess-btn:hover{
+background:#1f9aff;
+}
+
+.controls{
+margin-bottom:20px;
+}
+
+#skip-btn{
+padding:10px 20px;
+background:#590101;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+#skip-btn:hover{
+background:#2d0000;
+}
+
+.attempts{
+margin-top:10px;
+color:#aaa;
+}
+
+#result-message{
+margin-top:20px;
+font-size:20px;
+font-weight:bold;
+}
+
+#share-btn{
+padding:10px 20px;
+background:#1dd6f2;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+#share-btn:hover{
+background:#6bfdff;
+}
+
+#countdown{
+margin-top:20px;
+font-size:18px;
+color:#aaa;
+}
+
+#suggestions{
+position: absolute;
+top: 100%;
+left: 0;
+width: 100%;
+background: #222;
+border-radius: 5px;
+max-height: 200px;
+overflow-y: auto;
+z-index: 10;
+}
+
+.suggestion{
+padding: 10px;
+cursor: pointer;
+border-bottom: 1px solid #333;
+}
+
+.suggestion:hover{
+background:#333;
+}
+
+#frame-progress{
+font-size: 25px;
+letter-spacing: 6px;
+display: block;
+margin: 10px 0;
+text-align: center;
+}

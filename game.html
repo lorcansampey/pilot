@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="show game, framed game, guess the show, daily game, film quiz">
+<meta name="description" content="Play Pilot, a weekly TV show guessing game like Episode. Guess the TV show from scenes and share your score with friends.">
+<meta name="google-site-verification" content="QWeKKgN3mIfS6gJLoCS3i5q3D4tKAqOw93NfwKsaFrU" />
+<title>Pilot - Guess this weeks series! </title>
+<link rel="stylesheet" href="style1.css">
+<link rel="icon" href="/images/logo1.png?v=1"></head>
+
+<!--Important disclaimer for those snooping around my code, I reused the majority of my code from my previous website, ReelReveal. This explains some terms like 'shows' and what not. Now go back and play the god damn game!-->
+
+<body>
+
+<header class="game-header">
+<h1>📺 Pilot</h1>
+<p>Guess this weeks show and share your results!</p>
+</header>
+
+<main class="game-container">
+
+<div class="frame-container">
+<img id="show-frame" src="" alt="show Scene">
+<div id="frame-progress"></div></div>
+
+<div class="guess-section">
+
+<div class="input-wrapper">
+<input
+type="text"
+id="guess-input"
+placeholder="Enter show title..."
+/>
+
+<div id="suggestions"></div>
+</div>
+
+<button id="guess-btn">Guess</button>
+
+</div>
+
+<div class="controls">
+
+<button id="skip-btn">Skip </button>
+<button id="share-btn">Share </button>
+
+</div>
+
+<div class="attempts">
+<p>Frame <span id="frame-number">1</span> / 8</p>
+</div>
+
+
+
+<div id="result-message"></div>
+
+<div id="countdown"></div>
+
+</main>
+
+<footer>
+<p>All images belong to their respective copyright holders.
+Used for trivia and educational purposes. Also follow my <a href="https://twitch.tv/im_lorki">twitch</a>!</p>
+</footer>
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+<script src="script.js"></script>
+
+</body>
+</html>
