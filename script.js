@@ -260,17 +260,16 @@ guessBtn.click();
 function updateCountdown(){
   const now = new Date();
 
-  //Friday at 00:00 UTC
   const target = new Date();
-  target.setUTCHours(0,0,0,0);
 
-  const targetDay = 1;
-  const currentDay = target.getUTCDay();
+  const targetDay = 1; // Monday (0 = Sunday, 1 = Monday)
+  const currentDay = now.getDay();
 
   let daysUntil = targetDay - currentDay;
   if (daysUntil <= 0) daysUntil += 7;
 
-  target.setUTCDate(now.getUTCDate() + daysUntil);
+  target.setDate(now.getDate() + daysUntil);
+  target.setHours(0,0,0,0);
 
   const diff = target - now;
 
@@ -283,8 +282,8 @@ function updateCountdown(){
     `Next show in ${days}d ${hours}h ${minutes}m ${seconds}s`;
 }
 
+updateCountdown();
 setInterval(updateCountdown, 1000);
-
 // AUTOFILL
 const suggestionsBox = document.getElementById("suggestions");
 
