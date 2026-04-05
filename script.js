@@ -5,6 +5,7 @@ const shows = [
 ";",
 "The Last of Us",
 "The Office",
+"The Last of Us",
 "Stranger Things",
 "Game of Thrones",
 "The Walking Dead",
